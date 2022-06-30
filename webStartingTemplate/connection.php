@@ -13,4 +13,5 @@
     {
         echo 'Error occured'.mysqli_error($conn);
     }
-?>
+    // slide 202
+ ?>

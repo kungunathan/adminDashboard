@@ -105,6 +105,6 @@
 
 	<script src="jquery.min.js"></script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
-	<!-- slide 179	 -->
+	<!-- slide 202	 -->
 </body>
 </html>
