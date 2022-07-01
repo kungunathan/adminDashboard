@@ -40,7 +40,16 @@
         {
             //create insert query
             $sql = mysqli_query($conn, "INSERT INTO account(username,email,password)
-            VALUES('$username','$email','$password',)")
+            VALUES('$username','$email','$password')");
+
+            if($sql)
+            {
+                $msg= "Data submitted successfully";
+            }
+            else
+            {
+                $msg= 'Error';
+            }
         }
     }
 ?>

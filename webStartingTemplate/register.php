@@ -1,3 +1,9 @@
+<?php
+	$msg='';
+	require_once('processRegister.php')
+	//slide 228
+?>
+
 <!DOCTYPE html>
 <html>
 
