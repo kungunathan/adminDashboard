@@ -23,24 +23,27 @@
 	</div>
 	<div class="container">
 		<img src="zalego.jfif" alt="Zalego" height="100" width="100" class="rounded-circle m-5 p-3 mx-auto d-block ">
-		<form action="register.php" method="POST">
-			<div class="card p-5">
+		<form action="register.php" method="post" class="form-group" autocomplete="off">
+			<div class="justify-content-center align-items-center">
 				<div class="row">
 					<div class="col-lg-12">
-						<label for="username" class="form-label"><b>Username:</b></label>
+						<label for="username" class="form-group"><b>Username:</b></label>
 						<input type="text" name="username" class="form-control">
 					</div>
 					<div class="col-lg-12">
 						<label for="email" class="form-label"><b>Email:</b></label>
 						<input type="email" name="email" class="form-control">
 					</div>
-					
 					<div class="col-lg-12">
-						<label for="confirmpassword" class="form-label"><b>Conrim password:</b></label>
-						<input type="password" name="confirmpassword" class="form-control">
+						<label for="password" class="form-label"><b>Password:</b></label>
+						<input type="password" name="password" class="form-control">
+					</div>
+					<div class="col-lg-12">
+						<label for="cpassword" class="form-label"><b>Confirm Password:</b></label>
+						<input type="password" name="cpassword" class="form-control">
 					</div>
 				</div>
-				<button type="submit" name="submitRegistration" class="btn btn-primary mt-3 mb-3">Submit</button>
+				<button type="submit" name="signUp" class="btn btn-primary mt-3 mb-3">Submit</button>
 				<p>
 					Have an account? sign in <a href="login.php">Here</a>
 				</p>
