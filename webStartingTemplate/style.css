@@ -9,14 +9,14 @@ body{
     position: absolute;
     height: 50px;
     width: 100%;
-    background-color: #ff4500;
+    background-color: #f57e20;
     z-index: 5;
 }
 .sidebar{
     position: absolute;
     width: 100%;
     height: 100vh;
-    background-color: #7fc242;
+    background-color: #07b00d;
     z-index: 4;
     padding-top: 50px;
 }
