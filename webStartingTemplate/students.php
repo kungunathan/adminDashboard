@@ -11,11 +11,10 @@
 <body>
 	<!-- All our code. write here   -->
 	<div class="header">
-		<img src="zalego.jfif" alt="Zalego" height="50" width="50" class="rounded-circle">
-		<a href="index.php" class="navbar-trigger"><span></span></a>
-	</div>
+		<?php require_once('includes/navbar.php')?>
+	</div>	
 	<div class="sidebar">
-	<?php require_once('includes/sidebar.php')?>
+		<?php require_once('includes/sidebar.php')?>
 	</div>
 	<div class="main-content">
 		<div class="container-fluid">
