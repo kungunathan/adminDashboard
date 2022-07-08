@@ -1,6 +1,6 @@
 <?php
 	require_once('logics/dbconnection.php');
-	$queryUser = mysqli_query($conn, "SELECT * FROM enrollment WHERE no ='".$_GET['id']."'  ");
+	$queryUser = mysqli_query($conn, "SELECT * FROM enrollment WHERE no ='".$_GET['id']."' ");
 
 	while($fetchUser = mysqli_fetch_array($queryUser))
 	{
@@ -9,6 +9,31 @@
 		$email =  $fetchUser['email'];
 		$gender = $fetchUser['gender'];
 		$course =  $fetchUser['course'];
+	}
+
+	//update user records
+	if(isset($_POST['updateRecords']) )
+	{
+		//fetch form data
+		$name = $_POST['fullname'];
+		$phoneNumber = $_POST['phonenumber'];
+		$emailAddress = $_POST['email'];
+		$formGender = $_POST['gender'];
+		$formCourse = $_POST['course'];
+
+		//update records
+		$updateQuery = mysqli_query($conn,
+		"UPDATE enrollment SET fullname='$name', phonenumber='$phoneNumber', email='$emailAddress', gender= '$formGender', course= '$formCourse'
+		WHERE no='".$_GET['id']."'");
+
+		if($updateQuery)
+		{
+			echo "Data captured";
+		}
+		else
+		{
+			echo "Error occured";
+		}
 	}
 ?>
 
@@ -34,7 +59,7 @@
                             <h4>Edit Student: </h4>
                         </div>
 						<div class="card-body">
-							<form action="" method = "">
+							<form action="edit-enrollment.php" method = "POST">
 								<div class="row">
 									<div class="col-lg-6">
 										<label for="fullname" class="form-label"><b>Full Name:</b></label>
