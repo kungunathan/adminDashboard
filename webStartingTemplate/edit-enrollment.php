@@ -1,9 +1,11 @@
 <?php
-	require_once('logics/dbconnection.php');
+	$message ="";
+	require_once('logics\dbconnection.php');
 	$queryUser = mysqli_query($conn, "SELECT * FROM enrollment WHERE no ='".$_GET['id']."' ");
 
 	while($fetchUser = mysqli_fetch_array($queryUser))
 	{
+		$id = $fetchUser['no'];
 		$fullname = $fetchUser['fullname'];
 		$phonenumber =  $fetchUser['phonenumber'];
 		$email =  $fetchUser['email'];
@@ -28,11 +30,11 @@
 
 		if($updateQuery)
 		{
-			echo "Data captured";
+			$message= "Data captured";
 		}
 		else
 		{
-			echo "Error occured";
+			$message= "Error occured";
 		}
 	}
 ?>
@@ -57,9 +59,11 @@
                     <div class="card">
                         <div class="card-header bg-dark text-center text-white">
                             <h4>Edit Student: </h4>
+							<span><?php echo $message?></span>
                         </div>
 						<div class="card-body">
-							<form action="edit-enrollment.php" method = "POST">
+							<!-- form design -->
+							<form action="edit-enrollment.php?id=<?php echo $id?>" method = "POST">
 								<div class="row">
 									<div class="col-lg-6">
 										<label for="fullname" class="form-label"><b>Full Name:</b></label>
@@ -103,7 +107,7 @@
 									</div>
 								</div>
 								</div>
-						</form>
+							</form>
 						</div>
                     </div>
                 </div>
