@@ -93,13 +93,15 @@
 									</div>
 								</div>
 								<div class="row">
-									<label for="course" class= "form-label"><b>What's your preffered course?</b></label>
-										<select name = "course" class="form-control" aria-label="Default select example">
-											<option selected><?php echo $course?></option>
-											<option value=">Web Design">Web Design</option>
-											<option value="Data analysis">Data analysis</option>
-											<option value="Cyber security">Cyber security</option>
-										</select>
+									<div class="col-lg-6">
+										<label for="course" class= "form-label"><b>What's your preffered course?</b></label>
+											<select name = "course" class="form-control" aria-label="Default select example">
+												<option selected><?php echo $course?></option>
+												<option value=">Web Design">Web Design</option>
+												<option value="Data analysis">Data analysis</option>
+												<option value="Cyber security">Cyber security</option>
+											</select>
+									</div>		
 								</div>
 								<div class="row">
 									<div class="col-lg-6">
