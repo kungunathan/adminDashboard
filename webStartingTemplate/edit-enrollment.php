@@ -31,6 +31,7 @@
 		if($updateQuery)
 		{
 			$message= "Data captured";
+			header('location:students.php');
 		}
 		else
 		{
@@ -97,7 +98,7 @@
 										<label for="course" class= "form-label"><b>What's your preffered course?</b></label>
 											<select name = "course" class="form-control" aria-label="Default select example">
 												<option selected><?php echo $course?></option>
-												<option value=">Web Design">Web Design</option>
+												<option value="Web Design">Web Design</option>
 												<option value="Data analysis">Data analysis</option>
 												<option value="Cyber security">Cyber security</option>
 											</select>
