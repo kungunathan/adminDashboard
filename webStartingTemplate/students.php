@@ -21,7 +21,10 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="card-header bg-dark text-white text-center">
-						<span>Students</span>
+						<span>
+							Students
+							<a href="enroll-student.php"><button type="submit" class="btn btn-success float-right" ><i class= "fa fa-plus"></i></button></a>
+						</span>
 					</div>
 				<div class="card-body">
                     <table class="table table-striped table-hover table-responsive" style="font-style: 12px;">
