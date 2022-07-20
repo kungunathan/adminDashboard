@@ -32,7 +32,7 @@
                 <div class="col-lg-6">
                     <div class="card">
                         <div class="card-header bg-dark text-white text-center">
-                            <h4 class="card-title" >Detailed information</h4>
+                            <h4 class="card-title" >Extra information:</h4>
                         </div>
                         <div class="card-body">
 							<ul class="list-group">
